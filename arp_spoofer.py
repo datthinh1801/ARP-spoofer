@@ -96,7 +96,7 @@ try:
             break
 except KeyboardInterrupt:
     print("\n[+] Resetting ARP tables...")
-    for i in range(3):
+    for i in range(5):
         restore(target_ip, gateway_ip)
         restore(gateway_ip, target_ip)
         time.sleep(1)
